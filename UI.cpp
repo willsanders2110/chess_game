@@ -1,32 +1,26 @@
 #include "UI.h"
 
-void printBoard()
+void printBoard(char positions[8][8])
 {
 	cout << "      a       b       c       d       e       f       g       h\n";
 
 	for(int i=7; i >=0; i--)
 	{
-		if(i%2 == 0)
-		{
-			printLine(i, BLACK_SQUARE, WHITE_SQUARE);
-		}
-		else
-		{
-			printLine(i, WHITE_SQUARE, BLACK_SQUARE);
-		}
 		
+		printLine(i, positions[i]);		
 	}
 	cout << "  -----------------------------------------------------------------\n";
 }
 
-void printLine(int lineNumber, int colour1, int colour2)
+void printLine(int line_number, char line_data[8])
 	{
-		cout << "  -----------------------------------------------------------------\n";
-		
-		cout << "  |       |       |       |       |       |       |       |       |\n";
-		cout << lineNumber+1;
-		cout << " |       |       |       |       |       |       |       |       |\n";
-		cout << "  |       |       |       |       |       |       |       |       |\n";
+		cout << "  ";
+		cout << "-----------------------------------------------------------------\n";cout << "  ";
+		cout << "|       |       |       |       |       |       |       |       |\n";cout << line_number+1 << " ";
+		cout << "|   "<< line_data[0] <<"   |   "<< line_data[1] <<"   |   "<< line_data[2] 
+		<<"   |   "<< line_data[3] <<"   |   "<< line_data[4] <<"   |   "<< line_data[5] 
+		<<"   |   "<< line_data[6] <<"   |   "<< line_data[7] <<"   |\n";cout << "  ";
+		cout << "|       |       |       |       |       |       |       |       |\n";
 		
 		// for(int i=0; i<7; i++)
 			

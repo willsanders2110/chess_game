@@ -7,8 +7,14 @@ using namespace std;
 int main()
 
 {
-	cout << "Hello World\n";
-	cout << "What's up\n";
+	char initial_positions[8][8] = {{'r','n','b','k','q','b','n','r'},
+									{'p','p','p','p','p','p','p','p'},
+									{' ',' ',' ',' ',' ',' ',' ',' '},
+									{' ',' ',' ',' ',' ',' ',' ',' '},
+									{' ',' ',' ',' ',' ',' ',' ',' '},
+									{' ',' ',' ',' ',' ',' ',' ',' '},
+									{'p','p','p','p','p','p','p','p'},
+									{'r','n','b','k','q','b','n','r'}};
 
-	printBoard();
+	printBoard(initial_positions);
 }
