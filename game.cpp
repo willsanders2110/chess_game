@@ -102,7 +102,7 @@ void Board::printBoard()
 					break;
 			}	
 		}	
-	}
+	}	
 
 	cout << "      a       b       c       d       e       f       g       h\n";
 	for(int i=7; i>=0; i--)
@@ -115,16 +115,64 @@ void Board::printBoard()
 }
 
 void Board::printLine(int line_number, char line_data[8])
-	{
-		cout << "  ";
-		cout << "-----------------------------------------------------------------\n";cout << "  ";
-		cout << "|       |       |       |       |       |       |       |       |\n";cout << line_number+1 << " ";
-		cout << "|   "<< line_data[0] <<"   |   "<< line_data[1] <<"   |   "<< line_data[2] 
-		<<"   |   "<< line_data[3] <<"   |   "<< line_data[4] <<"   |   "<< line_data[5] 
-		<<"   |   "<< line_data[6] <<"   |   "<< line_data[7] <<"   |\n";cout << "  ";
-		cout << "|       |       |       |       |       |       |       |       |\n";
+{
+	cout << "  ";
+	cout << "-----------------------------------------------------------------\n";cout << "  ";
+	cout << "|       |       |       |       |       |       |       |       |\n";cout << line_number+1 << " ";
+	cout << "|   "<< line_data[0] <<"   |   "<< line_data[1] <<"   |   "<< line_data[2] 
+	<<"   |   "<< line_data[3] <<"   |   "<< line_data[4] <<"   |   "<< line_data[5] 
+	<<"   |   "<< line_data[6] <<"   |   "<< line_data[7] <<"   |\n";cout << "  ";
+	cout << "|       |       |       |       |       |       |       |       |\n";
+	
+	// for(int i=0; i<7; i++)
 		
-		// for(int i=0; i<7; i++)
-			
-		// cout << "\n";
-	}
+	// cout << "\n";
+}
+
+// void Board::makeMove()
+// {
+// 	// This runs each turn controlling user input for the moves that are to be made.
+// 	// It also checks whether the move is possible, and if it is possible moves the 
+// 	// moves the piece to the correct square.
+// 	// Should first ask "Select piece: " then "Select destination: "
+// 	// Select piece will check that a piece of your colour is movable
+// 	// Select destination will check that a move can be made, and if so move it
+// 	// There's gunna be no undo move cos I can't think how to do that currently 
+
+// }
+
+// bool Board::moveKing()
+// {
+// 	// Function that moves the selected King
+
+// }
+
+// bool Board::moveQueen()
+// {
+// 	// Function that moves the selected Queen
+
+// }
+
+// bool Board::moveBishop()
+// {
+// 	// Function that moves the selected Bishop
+
+// }
+
+// bool Board::MoveKnight()
+// {
+// 	// Function that moves the selected Knight
+
+// }
+
+// bool Board::MoveRook()
+// {
+// 	// Function that moves the selected Rook
+
+// }
+
+// bool Board::MovePawn()
+// {
+// 	// Function that moves the selected Rook
+
+// }
