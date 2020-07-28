@@ -146,6 +146,12 @@ void Board::makeMove()
 
 	cout << "Select piece: ";
 	cin >> position_start;
+	while(getInputLocation(position_start) == false)
+	{
+		cout << "Please try again: ";
+		cin >> position_start;
+	}
+
 	// cout << endl;
 	cout << "Checking position for piece..." << endl;
 
@@ -156,6 +162,27 @@ void Board::makeMove()
 
 
 }
+
+bool Board::getInputLocation(string position)
+{
+	if(position=="a1")
+	{
+		cout << "a1" << endl;
+		return true;
+	}
+	else if (position=="a2")
+	{
+		cout << "a1" << endl;
+		return true;
+	}
+	else
+	{
+		cout << "Error" << endl;
+		return false;
+	}
+
+}
+
 
 // bool Board::moveKing()
 // {
