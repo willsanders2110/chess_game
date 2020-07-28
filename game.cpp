@@ -1,6 +1,8 @@
 #include "square.h"
 #include "game.h"
 
+#include <string>
+
 void Board::setStartGame()
 {
 	// Square square[8][8];
@@ -129,17 +131,31 @@ void Board::printLine(int line_number, char line_data[8])
 	// cout << "\n";
 }
 
-// void Board::makeMove()
-// {
-// 	// This runs each turn controlling user input for the moves that are to be made.
-// 	// It also checks whether the move is possible, and if it is possible moves the 
-// 	// moves the piece to the correct square.
-// 	// Should first ask "Select piece: " then "Select destination: "
-// 	// Select piece will check that a piece of your colour is movable
-// 	// Select destination will check that a move can be made, and if so move it
-// 	// There's gunna be no undo move cos I can't think how to do that currently 
+void Board::makeMove()
+{
+	// This runs each turn controlling user input for the moves that are to be made.
+	// It also checks whether the move is possible, and if it is possible moves the 
+	// moves the piece to the correct square.
+	// Should first ask "Select piece: " then "Select destination: "
+	// Select piece will check that a piece of your colour is movable
+	// Select destination will check that a move can be made, and if so move it
+	// There's gunna be no undo move cos I can't think how to do that currently 
 
-// }
+	string position_start;
+	string position_end;
+
+	cout << "Select piece: ";
+	cin >> position_start;
+	// cout << endl;
+	cout << "Checking position for piece..." << endl;
+
+	cout << "Make move: ";
+	cin >> position_end;
+	cout << "Checking move... " << endl;
+
+
+
+}
 
 // bool Board::moveKing()
 // {

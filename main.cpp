@@ -28,4 +28,5 @@ int main()
 
 	board.setStartGame();
 	board.printBoard();
+	board.makeMove();
 }
